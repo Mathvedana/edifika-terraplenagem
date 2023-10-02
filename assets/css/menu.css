@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 200px;
+}
+
+.nav_links{
+    display: flex;
+    align-items: center;
+}
+
+.nav_links li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav_links li a{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+    color: #2C37B3;
+}
+
+.nav_links li a:hover{
+    color: #FF5E2E;
+}
+
+.nav_links li a.select{
+    color: #FF5E2E;
+}
+
+.nav-button {
+    display: flex;
+    margin-left: 115px;
+    padding: 0px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 109px;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button i {
+    font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #FF5E2E;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-button:hover {
+    background-color: #FF5E2E;
+    color: #fff;
+}
+
+.overlay-menu {
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlay-menu a{
+    padding: 8px;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.overlay-menu .dstk {
+    background-color: #FF5E2E;
+    width: 80%;
+    height: 20px;
+    border-radius: 25px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-menu .dstk:hover{
+    color: #000000;
+}
+
+.overlay-menu a:hover, .overlay-menu a:focus{
+    color: #FF5E2E;
+}
+
+.overlay-menu .closebtn{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-width: 3840px) {
+    .nav-button{
+        display: none;
+    }
+}
+
+@media screen and (max-width:3000px) {
+    .nav-button{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .nav-button{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .nav-menu{
+        display: none;
+    }
+
+    .navbar{
+        padding-inline: 20px;
+    }
+
+    .nav-button {
+        display: flex;
+        margin-left: 20px;
+        padding: 0px 0px;
+        background-color: #07070715;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 109px;
+        height: 42px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .nav-button {
+        margin-left: 73px;
+        padding: 9px 0px;
+        background-color: #3cad582a;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .nav-button {
+        margin-left: -4px;
+        padding: 9px 0px;
+        background-color: #FF5E2E;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+}
