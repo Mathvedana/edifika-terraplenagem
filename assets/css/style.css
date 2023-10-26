@@ -213,11 +213,18 @@
     height: 120px;
 }
 
-.empreendimentos{
+.empreendimentos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 80px 10px 0 0;
+    flex-direction: column;
+}
+
+.empreendimentos-container-1{
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 80px 200px;
+    margin-inline: 20%;
 }
 
 .empreendimentos-content-left{
@@ -260,6 +267,21 @@
 .empreendimentos-btn a:hover{
     background-color: #D5B277;
     color: #fff;
+}
+
+.empreendimentos-title {
+    margin-top: 60px;
+    margin-left: 180px;
+}
+
+.empreendimentos-imgs{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.empreendimentos-imgs img{
+    width: calc(100% / 3);
 }
 
 .equipamentos{
@@ -429,6 +451,11 @@
     font-size: 16px;
     font-weight: 600;
     text-align: center;
+}
+
+.materiais-item h1 span{
+    color: #FF5E2E;
+    font-size: 12px;
 }
 
 .footer{
@@ -792,6 +819,78 @@
     font-size: 40px;
 } 
 
+.btn-verMais {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.btn-verMais a{
+    text-decoration: none;
+    background-color: #FF5E2E;
+    color: #FFF;
+    padding: 20px 60px;
+    border-radius: 40px;
+    cursor: pointer !important;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.equipamentos-body{
+    padding-inline: 10px;
+}
+
+.equipamentos-container {
+    padding-inline: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equip-card {
+    width: 300px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 2px 1px 14px 1px #d7d6d6;
+    margin: 15px 20px;
+}
+
+.equip-card img{
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.equip-card h1{
+    margin: 20px 0px;
+    color: #FF5E2E;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.equipCardBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.equipCardBtn a{
+    background-color: #FF5E2E;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 10px 60px;
+    border-radius: 40px;
+    border: solid 1px #FF5E2E;
+}
+
 @media screen and (max-width: 1366px) {
 
     .nav-bar {
@@ -921,6 +1020,19 @@
         margin-bottom: 35px;
     }
 
+    .empreendimentos-container-1 {
+        display: flex;
+        align-items: center;
+        margin-inline: 10%;
+    }
+
+    .equipamentos-container {
+        padding-inline: 100px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
 
 @media screen and (max-width: 440px) {
@@ -938,6 +1050,7 @@
     .banner-content-left {
         margin-left: 0px;
         margin-top: 30px;
+        padding-inline: 10px;
     }
 
     .banner-content-left h1 {
@@ -948,7 +1061,7 @@
     }
 
     .banner-content-rigth img {
-        width: 432px;
+        width: 423px;
         margin-top: 20px;
     }
 
@@ -980,6 +1093,29 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+
+    .empreendimentos-container-1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-inline: 0;
+    }
+
+    .empreendimentos-title {
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+
+    .empreendimentos-imgs {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .empreendimentos-imgs img {
+        width: 100%;
     }
 
     .servicos-content-1 {
@@ -1329,6 +1465,13 @@
         font-weight: 600;
         margin-bottom: 35px;
         text-align: center;
+    }
+
+    .equipamentos-container {
+        padding-inline: 15px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -1911,6 +2054,25 @@
         margin: 15px 0;
         padding-right: 45px;
     }
+
+    .equipamentos-container {
+        padding-inline: 0px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .equip-card {
+        width: 300px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        padding: 15px;
+        box-shadow: 2px 1px 14px 1px #d7d6d6;
+        margin: 15px 15px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -1962,5 +2124,30 @@
         color: #FFF;
         font-size: 16px;
         margin-bottom: 40px;
+    }
+
+    .title-content h1 {
+        font-size: 26px;
+        font-weight: 700;
+        color: #505050;
+    }
+
+    .equipamentos-container {
+        padding-inline: 0px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .equip-card {
+        width: 300px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        padding: 15px;
+        box-shadow: 2px 1px 14px 1px #d7d6d6;
+        margin: 15px 0px;
     }
 }

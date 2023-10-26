@@ -133,6 +133,15 @@
     }
 }
 
+@media screen and (max-width: 1366px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 100px;
+    }
+}
+
 @media screen and (max-width: 1150px) {
     .nav-button{
         display: none;
